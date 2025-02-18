@@ -1,15 +1,15 @@
- 
+  
 function cashOut( money ) {
-    if(typeof money !== "number" || money <= 0){
+
+    if(typeof money !== "number" || money < 0){
         return "Invalid";
     }
      const perThousandCharge = 1.75;
-     const perCentage = 100;
+
+     let totalCharge = (money * perThousandCharge) / 100;
      
-     let totalCharge = (money* perThousandCharge) / 100;
      return totalCharge;
 };
-
 
 function validEmail(email) {
     const specialChar = [".", "-", "_", "+", "@"];
@@ -29,7 +29,6 @@ function validEmail(email) {
     return true;
 };
 
- 
 function electionResult(votes) {
     if(!Array.isArray(votes)){
         return "Invalid";
@@ -60,7 +59,7 @@ function electionResult(votes) {
     }
 };
 
- 
+  
 function isBestFriend(f1, f2) {
     if(typeof f1 !== "object" || typeof f2 !== "object"){
         return  "Invalid";
@@ -72,10 +71,8 @@ function isBestFriend(f1, f2) {
     else{
         return false;
     }
-    
 };
 
- 
 function calculateWatchTime(times) {
     if(!Array.isArray(times)){
        return "Invalid";

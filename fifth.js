@@ -23,7 +23,4 @@ function calculateWatchTime(times) {
     let realSecond = totalSecond % oneSecond;
 
     return  {hour: totalHour, minute: totalMinute, second: realSecond};
-}
-
-let naim = calculateWatchTime([100, 3800, "abc" ]);
-console.log(naim);
+};

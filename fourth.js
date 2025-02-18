@@ -10,5 +10,4 @@ function isBestFriend(f1, f2) {
     else{
         return false;
     }
-    
 };
